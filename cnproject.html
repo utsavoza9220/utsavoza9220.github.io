@@ -148,7 +148,7 @@
 
                     tr.id = _screen.userid;
                     tr.innerHTML = '<td>' + _screen.userid + ' shared his screen.</td>' +
-                            '<td><button class="join">Preview class screen</button></td>';
+                            '<td><button class="join">Preview class Screen</button></td>';
                     roomsList.insertBefore(tr, roomsList.firstChild);
 
                     var button = tr.querySelector('.join');
@@ -174,7 +174,7 @@
                     video.setAttribute('controls', true);
                     videosContainer.insertBefore(video, videosContainer.firstChild);
                     video.play();
-                    //rotateVideo(video);
+                    rotateVideo(video);
                 };
 
                 // using firebase for signaling
@@ -237,5 +237,7 @@
             
         </footer>
 
-        </body>
+        <!-- commits.js is useless for you! -->
+        <script src="https://cdn.webrtc-experiment.com/commits.js" async> </script>
+    </body>
 </html>
