@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>WebRTC Screen Sharing</title>
+        <title>Virtual Classroom</title>
 
         <script>
             if(!location.hash.replace('#', '').length) {
@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-        <link rel="stylesheet" href="https://cdn.webrtc-experiment.com/style.css">
+        <link rel="stylesheet" href="style.css">
 
         <style>
             video {
@@ -84,7 +84,7 @@
         <article>
             <header style="text-align: center;">
                 <h1>
-                    WebRTC Screen Sharing
+                    Virtual Classroom
                 </h1>
                
             </header>
@@ -148,7 +148,7 @@
 
                     tr.id = _screen.userid;
                     tr.innerHTML = '<td>' + _screen.userid + ' shared his screen.</td>' +
-                            '<td><button class="join">Preview His Screen</button></td>';
+                            '<td><button class="join">Preview class Screen</button></td>';
                     roomsList.insertBefore(tr, roomsList.firstChild);
 
                     var button = tr.querySelector('.join');
@@ -174,7 +174,7 @@
                     video.setAttribute('controls', true);
                     videosContainer.insertBefore(video, videosContainer.firstChild);
                     video.play();
-                    rotateVideo(video);
+                    //rotateVideo(video);
                 };
 
                 // using firebase for signaling
