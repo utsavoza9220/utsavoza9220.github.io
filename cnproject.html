@@ -94,9 +94,11 @@
                     <span>
                         Private ?? <a href="/screen-sharing/" target="_blank" title="Open this link for private screen sharing!"><code><strong id="unique-token">#123456789</strong></code></a>
                     </span>
-                    <input type="text" id="user-name" placeholder="Your Name">
-                    <button id="share-screen" class="setup">Share Your Screen</button>
+                    <input type="text" id="user-name"  placeholder="Class Code">
+                    
                 </section>
+
+                <button id="share-screen" class="">Share Your Screen</button>
 
                 <!-- list of all available broadcasting rooms -->
                 <table style="width: 100%;" id="rooms-list"></table>
@@ -213,7 +215,7 @@
                 (function() {
                     var uniqueToken = document.getElementById('unique-token');
                     if (uniqueToken)
-                        if (location.hash.length > 2) uniqueToken.parentNode.parentNode.parentNode.innerHTML = '<h2 style="text-align:center;"><a href="' + location.href + '" target="_blank">Share this link</a></h2>';
+                        if (location.hash.length > 2) uniqueToken.parentNode.parentNode.parentNode.innerHTML = '<h2 style="text-align:center;"><a href="' + location.href + '" target="_blank">Share your classroom</a></h2>';
                         else uniqueToken.innerHTML = uniqueToken.parentNode.parentNode.href = '#' + (Math.random() * new Date().getTime()).toString(36).toUpperCase().replace( /\./g , '-');
                 })();
 
@@ -236,7 +238,5 @@
             
         </footer>
 
-        <!-- commits.js is useless for you! -->
-        <script src="https://cdn.webrtc-experiment.com/commits.js" async> </script>
     </body>
 </html>
