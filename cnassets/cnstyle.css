@@ -1,9 +1,5 @@
 /* Fonts Copyright (C) 2011-2017 Hoefler & Co.*/
-@font-face {
-    font-family: "Whitney SSm A";
-    font-weight: 400;
-    font-style: normal;
-}
+
 
 html {
     background: #eee;
@@ -159,7 +155,7 @@ table, tbody, tr, td {
     font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
     font-size: 16px;
     line-height: 25.6000003814697px;
-    "><thead><tr style="border-top-width: 1px;
+    border-top-width: 1px;
     border-top-style: solid;
     border-top-color: rgb(204, 204, 204);
   }

@@ -570,6 +570,7 @@
         if (isFirefox) return sdp;
         if (isMobileDevice) return sdp;
 
+        // https://github.com/muaz-khan/RTCMultiConnection/blob/master/dev/BandwidthHandler.js
         if (typeof BandwidthHandler !== 'undefined') {
             window.isMobileDevice = isMobileDevice;
             window.isFirefox = isFirefox;
@@ -597,6 +598,7 @@
         return sdp;
     }
 
+    // getScreenId.js - https://github.com/muaz-khan//getScreenId
 
     function loadScript(src, onload) {
         var script = document.createElement('script');
