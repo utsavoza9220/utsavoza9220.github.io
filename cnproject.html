@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>Virtual Classroom</title>
-        <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
         <script>
             if(!location.hash.replace('#', '').length) {
                 location.href = location.href.split('#')[0] + '#' + (Math.random() * 100).toString().replace('.', '');
@@ -151,8 +150,8 @@
                     var tr = document.createElement('tr');
 
                     tr.id = _screen.userid;
-                    tr.innerHTML = '<td>' + _screen.userid + ' shared his screen.</td>' +
-                            '<td><button class="join">Preview His Screen</button></td>';
+                    tr.innerHTML = '<td>' + _screen.userid + ' shared the class screen.</td>' +
+                            '<td><button class="join">Preview class Screen</button></td>';
                     roomsList.insertBefore(tr, roomsList.firstChild);
 
                     var button = tr.querySelector('.join');
